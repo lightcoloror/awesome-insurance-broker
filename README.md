@@ -17,6 +17,11 @@
 
 - [insurance-content-storycraft](skills/insurance-content-storycraft/)：辅助生成、改写和检查保险经纪朋友圈/自媒体内容。使用前请先脱敏素材，并对产品、核保、理赔、健康告知和合规边界进行人工复核。
 
+### 相关项目
+
+- [aibao2026/aibaoguwen](https://github.com/aibao2026/aibaoguwen)：本地优先的保险客户工作日历，面向生日、保单续期、客户回访和手动待办等日常跟进场景。
+- [lightcoloror/ebook-markdown-pipeline](https://github.com/lightcoloror/ebook-markdown-pipeline)：本地图文材料转换器，可把电子书、PDF、Office 文档、截图、图片集和网页归档转成 Markdown、质量报告和 agent 友好的交付物，适合整理保险学习资料和课程材料。
+
 ## 镜像同步
 
 本仓库以 GitHub 为主仓库，可以通过 GitHub Actions 单向同步到 Gitee 镜像仓库。
