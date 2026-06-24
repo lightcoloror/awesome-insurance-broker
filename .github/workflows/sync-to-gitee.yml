@@ -1,0 +1,36 @@
+name: Sync to Gitee
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  sync:
+    name: Push GitHub main to Gitee
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure SSH
+        env:
+          GITEE_SSH_PRIVATE_KEY: ${{ secrets.GITEE_SSH_PRIVATE_KEY }}
+        run: |
+          test -n "$GITEE_SSH_PRIVATE_KEY"
+          mkdir -p ~/.ssh
+          printf '%s\n' "$GITEE_SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+
+      - name: Push to Gitee
+        run: |
+          git remote add gitee git@gitee.com:lightcoloror/awesome-insurance-broker.git
+          git push gitee main:main
+          git push gitee --tags

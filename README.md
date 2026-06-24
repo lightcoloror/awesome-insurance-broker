@@ -17,6 +17,21 @@
 
 - [insurance-content-storycraft](skills/insurance-content-storycraft/)：辅助生成、改写和检查保险经纪朋友圈/自媒体内容。使用前请先脱敏素材，并对产品、核保、理赔、健康告知和合规边界进行人工复核。
 
+## 镜像同步
+
+本仓库以 GitHub 为主仓库，可以通过 GitHub Actions 单向同步到 Gitee 镜像仓库。
+
+默认目标：
+
+- GitHub：`github.com/lightcoloror/awesome-insurance-broker`
+- Gitee：`gitee.com/lightcoloror/awesome-insurance-broker`
+
+启用同步前，请在 GitHub 仓库的 `Settings -> Secrets and variables -> Actions` 中添加仓库密钥：
+
+- `GITEE_SSH_PRIVATE_KEY`：用于推送到 Gitee 的 SSH 私钥。
+
+对应公钥需要添加到 Gitee 账号 SSH 公钥，或添加到 Gitee 目标仓库的部署公钥/可写公钥中。不要把私钥、Token、Cookie 或账号密码提交到仓库。
+
 ## 风险提示
 
 本仓库可能收录社区成员分享的 skills、脚本、提示词、配置文件或其他工具。这些内容不一定经过完整安全审计，也不保证适合你的运行环境。
