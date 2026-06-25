@@ -28,18 +28,23 @@
 
 ## 镜像同步
 
-本仓库以 GitHub 为主仓库，可以通过 GitHub Actions 单向同步到 Gitee 镜像仓库。
+本仓库以 GitHub 为主仓库，Gitee 作为国内访问镜像。推荐使用 Gitee 自带的 **Pull 镜像** 功能，由 Gitee 从 GitHub 拉取更新。
 
 默认目标：
 
 - GitHub：`github.com/lightcoloror/awesome-insurance-broker`
-- Gitee：`gitee.com/lightcoloror/awesome-insurance-broker`
+- Gitee：`gitee.com/bingcan-huang/awesome-insurance-broker`
 
-启用同步前，请在 GitHub 仓库的 `Settings -> Secrets and variables -> Actions` 中添加仓库密钥：
+配置方式：
 
-- `GITEE_SSH_PRIVATE_KEY`：用于推送到 Gitee 的 SSH 私钥。
+1. 在 Gitee 创建同名仓库 `awesome-insurance-broker`。
+2. 进入 Gitee 仓库的 `管理 -> 仓库镜像`。
+3. 选择 `Pull` 方向：从 GitHub 同步到 Gitee。
+4. 镜像仓库选择或填写 `lightcoloror/awesome-insurance-broker` 作为 GitHub 来源仓库；Gitee 镜像仓库地址为 `bingcan-huang/awesome-insurance-broker`。
+5. 在 GitHub 创建仅用于同步的私人令牌，并填入 Gitee 的“私人令牌”输入框。
+6. 如需自动同步，在 Gitee 勾选“自动从 GitHub 同步仓库”，并按页面提示给 GitHub 令牌增加 webhook 相关授权。
 
-对应公钥需要添加到 Gitee 账号 SSH 公钥，或添加到 Gitee 目标仓库的部署公钥/可写公钥中。不要把私钥、Token、Cookie 或账号密码提交到仓库。
+不要同时启用 GitHub Actions Push 同步和 Gitee Pull 镜像同步，避免两套机制重复推拉。不要把 GitHub 私人令牌、Gitee Token、Cookie 或账号密码提交到仓库。
 
 ## 风险提示
 
