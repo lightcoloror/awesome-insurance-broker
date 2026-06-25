@@ -22,6 +22,10 @@
 - [aibao2026/aibaoguwen](https://github.com/aibao2026/aibaoguwen)：本地优先的保险客户工作日历，面向生日、保单续期、客户回访和手动待办等日常跟进场景。
 - [lightcoloror/ebook-markdown-pipeline](https://github.com/lightcoloror/ebook-markdown-pipeline)：本地图文材料转换器，可把电子书、PDF、Office 文档、截图、图片集和网页归档转成 Markdown、质量报告和 agent 友好的交付物，适合整理保险学习资料和课程材料。
 
+#### 通用 Agent 工作流
+
+- [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files)：通用的文件化规划 skill，让 AI 在长任务中持续维护 `task_plan.md`、`findings.md` 和 `progress.md`，适合资料整理、工具开发、长期任务和多 agent 协作。注意：该 skill 使用 hooks 和 shell/PowerShell 脚本，安装前应先做源码审查，且不要把真实客户信息写入计划文件。
+
 ## 镜像同步
 
 本仓库以 GitHub 为主仓库，可以通过 GitHub Actions 单向同步到 Gitee 镜像仓库。
