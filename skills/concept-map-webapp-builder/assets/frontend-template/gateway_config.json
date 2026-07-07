@@ -1,0 +1,19 @@
+{
+  "service": "concept-map-local-gateway",
+  "host": "127.0.0.1",
+  "port": 8776,
+  "supported_open_types": [
+    "url",
+    "file",
+    "directory",
+    "app",
+    "python_ui"
+  ],
+  "entries": {
+    "example-docs": {
+      "type": "directory",
+      "target": ".",
+      "label": "项目目录 / Project folder"
+    }
+  }
+}

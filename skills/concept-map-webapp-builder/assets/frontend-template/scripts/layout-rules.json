@@ -1,0 +1,14 @@
+[
+  {
+    "source": "human-intent",
+    "target": "agent",
+    "direction": "left",
+    "reason": "User intent should appear before the agent that receives it."
+  },
+  {
+    "source": "agent",
+    "target": "tool",
+    "direction": "left",
+    "reason": "The agent should appear before the tool it calls."
+  }
+]
