@@ -8,6 +8,7 @@
 
 | Skill | 用途 | 风险等级 |
 |---|---|---|
+| [daily-logseq-review-plan](daily-logseq-review-plan/) | 辅助生成每日 Logseq 复盘与计划审核稿 | 中：会读取个人计划上下文，Logseq 写回必须人工确认 |
 | [insurance-content-storycraft](insurance-content-storycraft/) | 辅助生成、改写和检查保险经纪朋友圈/自媒体内容 | 中：会处理内容素材，必须脱敏并人工复核 |
 | [concept-map-webapp-builder](concept-map-webapp-builder/) | 把概念、流程、代码知识、工具雷达和证据链整理成关系图或本地 web 工作台 | 中：可能涉及本地文件入口、工具评测和 AI 生成结论，必须保留证据与人工复核 |
 

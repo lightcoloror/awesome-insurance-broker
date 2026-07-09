@@ -16,6 +16,7 @@
 ### Skills
 
 - [insurance-content-storycraft](skills/insurance-content-storycraft/)：辅助生成、改写和检查保险经纪朋友圈/自媒体内容。使用前请先脱敏素材，并对产品、核保、理赔、健康告知和合规边界进行人工复核。
+- [daily-logseq-review-plan](skills/daily-logseq-review-plan/)：辅助生成每日 Logseq 复盘与计划审核稿，默认只产出待人工审核内容，不直接写回 Logseq。
 
 ### 相关项目
 

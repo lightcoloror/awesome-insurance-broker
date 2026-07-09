@@ -1,0 +1,4 @@
+interface:
+  display_name: "Logseq Daily Review"
+  short_description: "API-first daily Logseq drafts"
+  default_prompt: "Draft or refine a daily Logseq journal plan/review from current weekly goals, monthly goals, yesterday/today journals, and the latest user prioritization. Produce a review artifact only unless I explicitly approve Logseq writeback."
